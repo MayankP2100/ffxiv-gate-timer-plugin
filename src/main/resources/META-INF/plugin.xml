@@ -25,6 +25,14 @@
     <!-- Extensions defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="FFXIV Gate Timer"
+                factoryClass="com.mays.ffxivgatetimer.toolwindow.GateTimerToolWindowFactory"
+                anchor="right"/>
+        <notificationGroup
+                id="FFXIV Gate Timer Notifications"
+                displayType="BALLOON"
+                isLogByDefault="true"/>
     </extensions>
 
 </idea-plugin>

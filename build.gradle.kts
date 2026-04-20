@@ -43,6 +43,12 @@ intellijPlatform {
 }
 
 tasks {
+    // This plugin currently has no IntelliJ UI Designer .form files, so disabling
+    // bytecode instrumentation is safe while troubleshooting Windows JDK path issues.
+    instrumentCode {
+        enabled = false
+    }
+
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
     }
